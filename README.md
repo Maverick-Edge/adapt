@@ -15,6 +15,9 @@ monad
 ##### Logical
 ##### Reacive
 #### Concurrent
+async
+promise
+wait
 ### Debugging
 life
 scope
