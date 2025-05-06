@@ -1,7 +1,7 @@
 # adapt
 Adapt, a custom programming language based off of C++.
 ## Ideals
-###
+* ### Structure
 Low Level to High Level:
 First to last compilation like C++; 
 Allows Direct Expressions in assembly with an underscored scope: \_\_{ASSEMBLY}\_\_;
@@ -24,24 +24,24 @@ Library
     * Camera
     * Microphone
   * Hardware
-### * Paradigms
-####  * Dynamic
-#####   * Recursion
-##### Caching
-#### Imperative
-##### Procedural
-##### Object Oriented
-#### Declarative
-##### Functional
+* ### Paradigms
+ * #### Dynamic
+  * ##### Recursion
+  * ##### Caching
+ * #### Imperative
+  * ##### Procedural
+  * ##### Object Oriented
+ * #### Declarative
+  * ##### Functional
 stateful
 monad
-##### Logical
-##### Reacive
-#### Concurrent
+  * ##### Logical
+  * ##### Reacive
+ * #### Concurrent
 async
 promise
 wait
-### Debugging
+* ### Debugging
 life
 scope
 graph
