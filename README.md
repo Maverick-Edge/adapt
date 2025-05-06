@@ -25,19 +25,19 @@ Library
     * Microphone
   * Hardware
 * ### Paradigms
- * #### Dynamic
-  * ##### Recursion
-  * ##### Caching
- * #### Imperative
-  * ##### Procedural
-  * ##### Object Oriented
- * #### Declarative
-  * ##### Functional
-stateful
-monad
-  * ##### Logical
-  * ##### Reacive
- * #### Concurrent
+  * #### Dynamic
+    * ##### Recursion
+    * ##### Caching
+  * #### Imperative
+    * ##### Procedural
+    * ##### Object Oriented
+  * #### Declarative
+    * ##### Functional
+    * ##### Logical
+      * stateful
+      * monad
+    * ##### Reactive
+  * #### Concurrent
 async
 promise
 wait
