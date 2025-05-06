@@ -5,3 +5,4 @@
 * https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html
 * https://www.nasm.us/xdoc/2.16.01/html/nasmdoc0.html
 * https://learn.microsoft.com/en-us/windows/win32/api/
+* https://sandpile.org/x86/opc_3.htm
