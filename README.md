@@ -24,9 +24,9 @@ Library
     * Camera
     * Microphone
   * Hardware
-### Paradigms
-#### Dynamic
-##### Recursion
+### * Paradigms
+####  * Dynamic
+#####   * Recursion
 ##### Caching
 #### Imperative
 ##### Procedural
