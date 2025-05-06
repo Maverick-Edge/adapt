@@ -8,22 +8,22 @@ Adapt, a custom programming language based off of C++.
   * Low level: compiles to assembly;
   * High level: strong library system provides the highest level of customization for applications;
 * ### Library
-* Algorithms
-  * Logical 
-  * Mathematical
-  * GPU 
-  * CPU 
-* Interfacing
-  * Programs
-    * Applications
-  * Output
-    * Text
-    * Video
-    * Audio
-  * Input
-    * Camera
-    * Microphone
-  * Hardware
+  * Algorithms
+    * Logical 
+    * Mathematical
+    * GPU 
+    * CPU 
+  * Interfacing
+    * Programs
+      * Applications
+    * Output
+      * Text
+      * Video
+      * Audio
+    * Input
+      * Camera
+      * Microphone
+    * Hardware
 * ### Paradigms
   * #### Dynamic
     * ##### Recursion
