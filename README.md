@@ -38,27 +38,40 @@ Adapt, a custom programming language based off of C++.
       * monad
     * ##### Reactive
   * #### Concurrent
-    * async
-    * promise
-    * wait
 * ### Debugging
   * life
   * scope
   * graph
 
-* ### Conditions
+* ### Conditional Execution
+Errors  
   * try
     * throw
     * catch
     * finally
+Branches
   * switch
     * case
     * if 
     * then
     * else
     * default
+Iterations
   * loop
     * for
     * do
     * while
     * until
+Recursion
+  * recurse
+    * memo
+* ### Concurrency and Parallelism
+  * async
+    * lazy
+    * promise
+      * kept
+      
+      * broken
+    * wait
+      * await
+    * 
