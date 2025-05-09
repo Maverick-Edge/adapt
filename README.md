@@ -46,13 +46,19 @@ Adapt, a custom programming language based off of C++.
   * scope
   * graph
 
-* ### Conditionals
+* ### Conditions
   * try
     * throw
     * catch
     * finally
   * switch
     * case
-    * if
+    * if 
+    * then
     * else
     * default
+  * loop
+    * for
+    * do
+    * while
+    * until
