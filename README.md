@@ -45,6 +45,8 @@ Adapt, a custom programming language based off of C++.
 
 * ### Conditional Execution
 Errors  
+  * pre
+  * post
   * try
     * throw
     * catch
@@ -70,8 +72,13 @@ Recursion
     * lazy
     * promise
       * kept
-      
       * broken
     * wait
       * await
-    * 
+      * yield
+* ### Deduplication
+  * interface
+  * struct
+  * macros
+  * get
+  * set
