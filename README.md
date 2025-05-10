@@ -78,6 +78,8 @@ Recursion
       * yield
 * ### Deduplication
   * interface
+  * contract
+  * implement
   * struct
   * macros
   * get
