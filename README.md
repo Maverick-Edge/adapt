@@ -42,6 +42,11 @@ Adapt, a custom programming language based off of C++.
   * life
   * scope
   * graph
+* ### Speed
+  * Precompiled
+  * JIT optimization
+  * Boolean Optimization
+  * Algebraic Optimization
 
 * ### Conditional Execution
 Errors  
