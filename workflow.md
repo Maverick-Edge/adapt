@@ -5,7 +5,7 @@
 5) Keyword and Syntax Parsing
 6) Monadizing
 7) Static Compiling
-*  1) Type Checking
-*  2) Inferred Type Checking
-*  3) Computer Algebra Optimization
-*  4) Assembly Optimization
+*1) Type Checking
+*2) Inferred Type Checking
+*3) Computer Algebra Optimization
+*4) Assembly Optimization
