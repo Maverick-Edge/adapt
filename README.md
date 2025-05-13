@@ -1,4 +1,4 @@
-# adapt
+⁹# adapt
 Adapt, a custom programming language based off of C++.
 ## Ideals
 * ### Structure
@@ -11,6 +11,7 @@ Adapt, a custom programming language based off of C++.
   * Algorithms
     * Logical 
     * Mathematical
+      * Custom computer algebra system
     * GPU 
     * CPU 
   * Interfacing
