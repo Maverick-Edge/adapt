@@ -3,8 +3,8 @@
 3) Preprocessing
 4) Tokenizer
 5) Keyword and Syntax Parsing
-6) Static Type Checking
-7) Inferred Type Checking
-8) Computer Algebra Optimization
-
-9) Assembly Optimization
+6) Static Compiling
+  1) Type Checking
+  2) Inferred Type Checking
+  3) Computer Algebra Optimization
+  4) Assembly Optimization
