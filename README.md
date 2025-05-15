@@ -9,6 +9,7 @@ Adapt, a custom programming language based off of C++.
   * High level: strong library system provides the highest level of customization for applications;
 * ### Compiler Flags
   * No Optimization
+  * Machine Optimization
   * Security Optimization
   * Access/Link Optimization
   * Cache Optimization
@@ -19,6 +20,7 @@ Adapt, a custom programming language based off of C++.
   * Optimization Depth
   * JIT Optimization
   * Log Optimized Code
+  * Please Compile
 
 * ### Library
   * Algorithms
