@@ -7,11 +7,24 @@ Adapt, a custom programming language based off of C++.
   * Allows Direct Expressions in assembly with an assembly scope: \_\_{ASSEMBLY}\_\_ or assembly {};
   * Low level: compiles to assembly;
   * High level: strong library system provides the highest level of customization for applications;
+* ### Compiler Flags
+  * No Optimization
+  * Security Optimization
+  * Access/Link Optimization
+  * Cache Optimization
+  * Locality Optimization
+  * Predictability Optimization
+  * Logical Optimization
+  * Algebraic Optimization
+  * Optimization Depth
+  * JIT Optimization
+  * Log Optimized Code
+
 * ### Library
   * Algorithms
     * Logical 
     * Mathematical
-      * Custom computer algebra system
+      * Custom Computer Algebra System
     * GPU 
     * CPU 
   * Interfacing
@@ -43,11 +56,6 @@ Adapt, a custom programming language based off of C++.
   * life
   * scope
   * graph
-* ### Speed
-  * Precompiled
-  * JIT optimization
-  * Boolean Optimization
-  * Algebraic Optimization
 
 * ### Conditional Execution
 Errors  
