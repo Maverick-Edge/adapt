@@ -1,5 +1,5 @@
 # adapt
-Adapt, a custom programming language built to overwhelming developers.
+Adapt, a custom programming language based on overwhelming developers.
 ## Ideals
 * ### Structure
   * Low Level to High Level:
@@ -8,7 +8,7 @@ Adapt, a custom programming language built to overwhelming developers.
   * Low level: compiles to assembly;
   * High level: strong library system provides the highest level of customization for applications;
 * ### Compiler Flags
-  * Compiler Version
+  * Compiler Library
     * Minimalist
       * Bytes, Locations, Accesses, basically  differently formatted assembly.
     * Typed
