@@ -1,5 +1,5 @@
 # adapt
-Adapt, a custom programming language based off of C++.
+Adapt, a custom programming language built to overwhelming developers.
 ## Ideals
 * ### Structure
   * Low Level to High Level:
