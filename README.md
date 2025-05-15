@@ -8,6 +8,11 @@ Adapt, a custom programming language based off of C++.
   * Low level: compiles to assembly;
   * High level: strong library system provides the highest level of customization for applications;
 * ### Compiler Flags
+  * Compiler Version
+    * Minimalist
+    * Typed
+    * Templated
+    * Complete
   * No Optimization
   * Machine Optimization
   * Security Optimization
