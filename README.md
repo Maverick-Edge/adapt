@@ -10,9 +10,19 @@ Adapt, a custom programming language based off of C++.
 * ### Compiler Flags
   * Compiler Version
     * Minimalist
+      * Bytes, Locations, Accesses, basically  differently formatted assembly.
     * Typed
+      * Basically C
     * Templated
-    * Complete
+      * C++ STL
+    * Structured
+      * Create functional applications
+    * Visual
+      * CSS/HTML
+    * Graphic
+      * GPU and shaders
+    * External
+      * Transpiling
   * No Optimization
   * Machine Optimization
   * Security Optimization
