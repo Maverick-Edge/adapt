@@ -1,5 +1,4 @@
 « » 
-「 」
 。、・
 * ? conditional
 * = assignment
@@ -11,4 +10,9 @@
 * ¿ dereferencer, gets the value from the address
 
 
-* 
+* 「 Birth
+*  ~ Lifetime
+*  」Death
+
+* ' String delineator
+* " regex 
