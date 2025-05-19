@@ -8,9 +8,13 @@
 
 * [> bit shift right
 * <] bit shift left
-* & bitwise and
-*  bitwise or
-* 
+* |   OR
+* &   AND 
+* !   NOT
+* !|  NOR
+* !&  NAND
+* ^|  XOR
+* ^!| XNOR
 
 * @ referencer, returns the address of the memory
 * ¿ dereferencer, gets the value from the address
