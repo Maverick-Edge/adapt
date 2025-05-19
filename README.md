@@ -1,5 +1,5 @@
-# adapt
-Adapt, a custom programming language based on overwhelming developers.
+# Constant
+Constant, a custom programming language based on overwhelming developers.
 ## Ideals
 * ### Structure
   * Low Level to High Level:
