@@ -15,7 +15,7 @@
 * !&  NAND
 * ^|  XOR
 * ^!| XNOR
-* >>  IMP
+* \>\>  IMP
 * !>> NIMP
 
 * @ referencer, returns the address of the memory
