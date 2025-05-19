@@ -8,6 +8,8 @@
 
 * [> bit shift right
 * <] bit shift left
+* & bitwise and
+*  bitwise or
 * 
 
 * @ referencer, returns the address of the memory
