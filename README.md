@@ -116,3 +116,6 @@ Recursion
   * get
   * set
 * ### AI supported architecture customization
+VLIW
+RISC
+CISC
