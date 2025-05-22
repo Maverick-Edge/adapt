@@ -18,12 +18,11 @@
       * Transpiling
   * ## Optimizations
     * No Optimization
-    * Machine Optimization
+    * Machine Platform Optimization
     * Security Optimization
-    * Access/Link Optimization
-    * Cache Optimization
-    * Locality Optimization
-    * Batch Optimization
+    * Memory Locality Optimization
+    * Temporal Locality Optimization
+    * Network Optimization
     * Predictability Optimization
     * Logical Optimization
     * Algebraic Optimization
