@@ -7,36 +7,6 @@ Constant, a custom programming language based on overwhelming developers.
   * Allows Direct Expressions in assembly with an assembly scope: \_\_{ASSEMBLY}\_\_ or assembly {};
   * Low level: compiles to assembly;
   * High level: strong library system provides the highest level of customization for applications;
-* ### Compiler Flags
-  * Compiler Library
-    * Minimalist
-      * Bytes, Locations, Accesses, basically  differently formatted assembly.
-    * Typed
-      * Basically C
-    * Templated
-      * C++ STL
-    * Structured
-      * Create functional applications
-    * Visual
-      * CSS/HTML
-    * Graphic
-      * GPU and shaders
-    * External
-      * Transpiling
-  * No Optimization
-  * Machine Optimization
-  * Security Optimization
-  * Access/Link Optimization
-  * Cache Optimization
-  * Locality Optimization
-  * Predictability Optimization
-  * Logical Optimization
-  * Algebraic Optimization
-  * Optimization Depth
-  * JIT Optimization
-  * Log Optimized Code
-  * Please Compile
-
 * ### Library
   * Algorithms
     * Logical 
