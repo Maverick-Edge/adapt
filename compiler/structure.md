@@ -1,5 +1,5 @@
-* ### Compiler Flags
-  * Compiler Library
+* ## Compiler Flags
+  * Compiler version
     * Bitwise
       * Give and recieve signals from a dark CPU.
     * Minimalist
@@ -16,16 +16,17 @@
       * GPU and shaders
     * External
       * Transpiling
-  * No Optimization
-  * Machine Optimization
-  * Security Optimization
-  * Access/Link Optimization
-  * Cache Optimization
-  * Locality Optimization
-  * Batch Optimization
-  * Predictability Optimization
-  * Logical Optimization
-  * Algebraic Optimization
-  * Optimization Depth
-  * JIT Optimization
-  * Log Optimized Code
+  * ## Optimizations
+    * No Optimization
+    * Machine Optimization
+    * Security Optimization
+    * Access/Link Optimization
+    * Cache Optimization
+    * Locality Optimization
+    * Batch Optimization
+    * Predictability Optimization
+    * Logical Optimization
+    * Algebraic Optimization
+    * Optimization Depth
+    * JIT Optimization
+    * Log Optimized Code
