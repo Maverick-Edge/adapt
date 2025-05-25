@@ -25,20 +25,6 @@ Constant, a custom programming language based on overwhelming developers.
       * Camera
       * Microphone
     * Hardware
-* ### Paradigms
-  * #### Dynamic
-    * ##### Recursion
-    * ##### Caching
-  * #### Imperative
-    * ##### Procedural
-    * ##### Object Oriented
-  * #### Declarative
-    * ##### Functional
-    * ##### Logical
-      * stateful
-      * monad
-    * ##### Reactive
-  * #### Concurrent
 * ### Debugging
   * life
   * scope
