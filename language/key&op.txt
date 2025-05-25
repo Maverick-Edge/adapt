@@ -4,10 +4,11 @@
 * [] subscript operators
 * : iteration operator
 
-* () call operator (may contain a tuple)
-* 
+* () call operator (may contain a tuple) 
 
 * {} scoping operator
+* \{} Threaded Scope Separator
+  * Cannot cross threads, only merge and split. when creating a threaded scope you can take possession of memory, and that memory cannot be accessed until the thread resolves.
 * . member access operator
 * .. scope access operator
   * std..add() retrieves add() from std or it's public subscopes
@@ -19,9 +20,6 @@
 * = copy assignment
 * == value equality
 * === reference equality
-
-* \{} Thread Separator
-
 
 * [> bit shift right
 * <] bit shift left
@@ -42,6 +40,8 @@
 * / Division
 * // Modulo
 * +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
+* Duplicate operations and assignment-operations can be strung together as a tuple: x += (1, 2, 3, 4) becomes 10. If given an array, it perform on each element.
+* Embedded tuples return tuples: x += ((1, 2, 3), (4, 5)) becomes (6, 9)
 
 * " String delineator
 * ' Regex Expressions
