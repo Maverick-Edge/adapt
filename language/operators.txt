@@ -1,8 +1,14 @@
-* # Preprocessor commands
+* ;# Preprocessor commands
+* ; Comment delineator
 
 * , element separator
-* [] subscript operators
+* [x:y] subscript operators and dimension separator
 * : iteration operator
+* @ referencer, returns the address of the memory (reference)  
+* # dereferencer, gets the value from the address (pointer)
+
+*  ~ Lifetime
+
 
 * () call operator (may contain a tuple) 
 
@@ -47,17 +53,16 @@
 
 * " String delineator
 * ' Regex Expressions
-* ` Escape Character for strings, and spacer for bytes
+* ` Escape Character for strings, and spacer for hard coded bytes
 
 * &+ Concatenation (Specific Bytes)
-* &* Concatenation (Insert copies after first instance of token)
+* &* Concatenation (Insert copies after each instance of token)
   * "Hello " &* (" ", "World") becomes "Hello World"
-* &** Concatenation (Insert copies after last instance of token)
+  * "Hello  " &* (" ", " World") becomes "Hello  World  World"
+* &** Regex Concatenation (Insert copies after specified capture groups)
+  * str &** ('regExpression with capture groups', "inserted string")
 * &- Decatenation (Specific Bytes)
-* &/ Decatenation (First instance of token)
-* &// Decatenation (Last Instance of token)
-
-* @? referencer, returns the address of the memory
-* @ dereferencer, gets the value from the address
-
-*  ~ Lifetime
+* &/ Decatenation (Delete each instance of token)
+* &// Decatenation (Delete capture groups)
+  * str &** 'regExpression with capture groups'
+* &/* Find and Replace (replace capture groups with a token)
