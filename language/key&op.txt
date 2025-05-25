@@ -1,0 +1,61 @@
+* # Preprocessor commands
+
+* , element separator
+* [] subscript operators
+* : iteration operator
+
+* () call operator (may contain a tuple)
+* 
+
+* {} scoping operator
+* . member access operator
+* .. scope access operator
+  * std..add() retrieves add() from std or it's public subscopes
+  * ..add() retrieves an external to the current scope add if there is a local add() defined.
+  * also works for variables
+
+* ? conditional
+* <= move assignment
+* = copy assignment
+* == value equality
+* === reference equality
+
+* \{} Thread Separator
+
+
+* [> bit shift right
+* <] bit shift left
+* ||   OR
+* &&   AND 
+* >>   IMP
+* !!   NOT
+* !|   NOR
+* !&   NAND
+* !>   NIMP
+* ^|   XOR
+* ^!|  XNOR
+
+* + Addition 
+* - Subtraction
+* * Multiplication
+* ** Exponent
+* / Division
+* // Modulo
+* +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
+
+* " String delineator
+* ' Regex Expressions
+* ` Escape Character for strings, and spacer for bytes
+
+* &+ Concatenation (Specific Bytes)
+* &* Concatenation (Insert copies after first instance of token)
+  * "Hello " &* (" ", "World") becomes "Hello World"
+* &** Concatenation (Insert copies after last instance of token)
+* &- Decatenation (Specific Bytes)
+* &/ Decatenation (First instance of token)
+* &// Decatenation (Last Instance of token)
+
+* @? referencer, returns the address of the memory
+* @ dereferencer, gets the value from the address
+
+*  ~ Lifetime
