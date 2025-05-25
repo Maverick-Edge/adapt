@@ -1,5 +1,5 @@
 # Constant
-Constant, a custom programming language based on overwhelming developers.
+CA9, a custom programming language based on overwhelming developers.
 ## Ideals
 * ### Structure
   * Low Level to High Level:
@@ -7,24 +7,7 @@ Constant, a custom programming language based on overwhelming developers.
   * Allows Direct Expressions in assembly with an assembly scope: \_\_{ASSEMBLY}\_\_ or assembly {};
   * Low level: compiles to assembly;
   * High level: strong library system provides the highest level of customization for applications;
-* ### Library
-  * Algorithms
-    * Logical 
-    * Mathematical
-      * Custom Computer Algebra System
-    * GPU 
-    * CPU 
-  * Interfacing
-    * Programs
-      * Applications
-    * Output
-      * Text
-      * Video
-      * Audio
-    * Input
-      * Camera
-      * Microphone
-    * Hardware
+
 * ### Debugging
   * life
   * scope
