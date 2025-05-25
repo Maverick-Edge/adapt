@@ -2,7 +2,7 @@
 * ; Comment delineator
 
 * , element separator
-* [x:y] subscript operators and dimension separator
+* [x:y:z] subscript operators and dimension separator
 * : iteration operator
 * @ referencer, returns the address of the memory (reference)  
 * # dereferencer, gets the value from the address (pointer)
