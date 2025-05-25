@@ -23,15 +23,17 @@
 
 * [> bit shift right
 * <] bit shift left
-* ||   OR
-* &&   AND 
-* >>   IMP
-* !!   NOT
-* !|   NOR
-* !&   NAND
-* !>   NIMP
-* ^|   XOR
-* ^!|  XNOR
+* (Single bit gate, single symbol)
+  * !   NOT 
+* (Two bit gate, two symbols)
+  * ||   OR
+  * &&   AND 
+  * >>   IMP
+  * !|   NOR
+  * !&   NAND
+  * !>   NIMP
+  * ^|   XOR
+  * ^!   XNOR
 
 * + Addition 
 * - Subtraction
