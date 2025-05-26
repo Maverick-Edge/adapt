@@ -4,8 +4,8 @@
 * , element separator
 * [x:y:z] subscript operators and dimension separator
 * :: iteration operator
-* @ referencer, returns the address of the memory (reference)  
-* # dereferencer, gets the value from the address (pointer)
+---- * #var Pointer operator, returns the address of the memory (Pointer)  
+---- * @var Alias operater, returns the memory (Reference)
 
 *  ~ Lifetime
 
@@ -26,9 +26,12 @@
 
 * ? conditional
 * : Declaration operator
-* <= move assignment
-* = copy assignment
+
+* = Assignment
   * := Declare and assign
+----  * @= Pointer assignment
+  * +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
+
 * == value equality
 * === reference equality
 
@@ -52,7 +55,6 @@
 * ** Exponent
 * / Division
 * // Modulo
-* +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 * Duplicate operations and assignment-operations can be strung together as a tuple: x += (1, 2, 3, 4) becomes 10. If given an array, it perform on each element.
 * Embedded tuples return tuples: x += ((1, 2, 3), (4, 5)) becomes (6, 9)
 
