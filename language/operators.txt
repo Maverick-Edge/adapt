@@ -1,75 +1,72 @@
-* ;# Preprocessor and Compiler commands
-* ; Comment delineator
+;# Preprocessor and Compiler commands
+; Comment delineator
 
-* , element separator
-* [x:y:z] subscript operators and dimension separator
-* :: iteration operator
----- * #var Pointer operator, returns the address of the memory (Pointer)  
----- * @var Alias operater, returns the memory (Reference)
+, element separator
+[x:y:z] subscript operators and dimension separator
+:: iteration operator
 
-*  ~ Lifetime
+#var Pointer operator, returns the address of the memory (Pointer)  
+@var Alias operater, returns the memory (Reference)
 
+~ Lifetime
 
-* () call operator (may contain a tuple) 
+() call operator (may contain a tuple) 
 
-* {} scoping operator
-  * _{} Assembly Scope
-  * \{} Threaded Scope
-    * Cannot cross threads, only merge and split. when creating a threaded scope you can take possession of memory, and that memory cannot be accessed until the thread resolves.
-  *<tag} Scope Jump Operator  
-  *{tag> Scope Land Operator
-* . member access operator
-* .. scope access operator
-  * std..add() retrieves add() from std or it's public subscopes
-  * ..add() retrieves an external to the current scope add if there is a local add() defined.
-  * also works for variables
+{} scoping operator
+  _{} Assembly Scope
+  \{} Threaded Scope
+     Cannot cross threads, only merge and split. when creating a threaded scope you can take possession of memory, and that memory cannot be accessed until the thread resolves.
+  <tag} Scope Jump Operator  
+  {tag> Scope Land Operator
+ . member access operator
+ .. scope access operator
+   std..add() retrieves add() from std or it's public subscopes
+   ..add() retrieves an external to the current scope add if there is a local add() defined.
+   also works for variables
 
-* ? conditional
-* : Declaration operator
+ ? conditional
+ : Declaration operator
+ = Assignment
+   := Declare and assign
+   @= Pointer assignment
+   +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 
-* = Assignment
-  * := Declare and assign
-----  * @= Pointer assignment
-  * +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
+ == value equality
+ === reference equality
+ [> bit shift right
+ <] bit shift left
+!   NOT 
 
-* == value equality
-* === reference equality
+   ||   OR
+   &&   AND 
+   >>   IMP
+   !|   NOR
+   !&   NAND
+   !>   NIMP
+   ^|   XOR
+   ^!   XNOR
 
-* [> bit shift right
-* <] bit shift left
-* (Single bit gate, single symbol)
-  * !   NOT 
-* (Two bit gate, two symbols)
-  * ||   OR
-  * &&   AND 
-  * >>   IMP
-  * !|   NOR
-  * !&   NAND
-  * !>   NIMP
-  * ^|   XOR
-  * ^!   XNOR
+ + Addition 
+ - Subtraction
+ * Multiplication
+ ** Exponent
+ / Division
+ // Modulo
+     Duplicate operations and assignment-operations can be strung together as a tuple: x += (1, 2, 3, 4) becomes 10. If given an array, it perform on each element.
+     Embedded tuples return tuples: x += ((1, 2, 3), (4, 5)) becomes (6, 9)
 
-* + Addition 
-* - Subtraction
-* * Multiplication
-* ** Exponent
-* / Division
-* // Modulo
-* Duplicate operations and assignment-operations can be strung together as a tuple: x += (1, 2, 3, 4) becomes 10. If given an array, it perform on each element.
-* Embedded tuples return tuples: x += ((1, 2, 3), (4, 5)) becomes (6, 9)
+ " String delineator
+ ' Regex Expressions
+ ` Escape Character for strings, and spacer for hard coded bytes
 
-* " String delineator
-* ' Regex Expressions
-* ` Escape Character for strings, and spacer for hard coded bytes
-
-* &+ Concatenation (Specific Bytes)
-* &* Concatenation (Insert copies after each instance of token)
-  * "Hello " &* (" ", "World") becomes "Hello World"
-  * "Hello  " &* (" ", " World") becomes "Hello  World  World"
-* &** Regex Concatenation (Insert copies after specified capture groups)
-  * str &** ('regExpression with capture groups', "inserted string")
-* &- Decatenation (Specific Bytes)
-* &/ Decatenation (Delete each instance of token)
-* &// Decatenation (Delete capture groups)
-  * str &** 'regExpression with capture groups'
-* &/* Find and Replace (replace capture groups with a token)
+ &+ Concatenation (Specific Bytes)
+ &* Concatenation (Insert copies after each instance of token)
+   "Hello " &* (" ", "World") becomes "Hello World"
+   "Hello  " &* (" ", " World") becomes "Hello  World  World"
+ &** Regex Concatenation (Insert copies after specified capture groups)
+   str &** ('regExpression with capture groups', "inserted string")
+ &- Decatenation (Specific Bytes)
+ &/ Decatenation (Delete each instance of token)
+ &// Decatenation (Delete capture groups)
+   str &** 'regExpression with capture groups'
+ &/* Find and Replace (replace capture groups with a token)
