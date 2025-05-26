@@ -3,7 +3,7 @@
 
 * , element separator
 * [x:y:z] subscript operators and dimension separator
-* : iteration operator
+* :: iteration operator
 * @ referencer, returns the address of the memory (reference)  
 * # dereferencer, gets the value from the address (pointer)
 
@@ -13,8 +13,11 @@
 * () call operator (may contain a tuple) 
 
 * {} scoping operator
-* \{} Threaded Scope Separator
-  * Cannot cross threads, only merge and split. when creating a threaded scope you can take possession of memory, and that memory cannot be accessed until the thread resolves.
+  * _{} Assembly Scope
+  * \{} Threaded Scope
+    * Cannot cross threads, only merge and split. when creating a threaded scope you can take possession of memory, and that memory cannot be accessed until the thread resolves.
+  *<tag} Scope Jump Operator  
+  *{tag> Scope Land Operator
 * . member access operator
 * .. scope access operator
   * std..add() retrieves add() from std or it's public subscopes
@@ -22,8 +25,10 @@
   * also works for variables
 
 * ? conditional
+* : Declaration operator
 * <= move assignment
 * = copy assignment
+  * := Declare and assign
 * == value equality
 * === reference equality
 
