@@ -1,3 +1,4 @@
+
 ;# Preprocessor and Compiler commands
 ; Comment delineator
 
@@ -7,6 +8,7 @@ a,,b range / iteration operator
    for i[,,] ; iterates each element in i
    for i[3,,10] ; iterates elements indexed 3 to 10 in i
 
+x :: y  Explicitly assign memory address y to x
 #var Pointer operator, returns the address of the memory (Pointer)  
 @var Alias operater, returns implicitly dereferenced memory (Reference) or dereferences memory
 
@@ -19,21 +21,25 @@ a,,b range / iteration operator
    std..add() retrieves add() from std or it's public subscopes
    ..add() retrieves an external to the current scope add if there is a local add() defined.
 
-x.[y] subscript operator for accessing indexed fields
-   x[y] 
-   [x,y] tensor operator
-   [x]y
-   [x].y
+
 x.(y) method access operator, supports multiple method calls
    x(y) call operator 
-   (x, y) tuple/list/vector delineator
+   (x, y) tuple/list/vector
    (x)y
    (x).y reverse call operator. supports vectorized calls on multiple values
+x.[y] subscript operator for accessing indexed fields
+   x[y][z] ; gets the z bit from the y byte of x 
+   [x, y] tensor operator
+   [x]y
+   [x].y
 x.<y>
-   x<y>
+   x<y> 
    <x, y>
    <x>y Trait punning
-   <x>.y
+     <~mat> removes math trait
+     <log> adds logical trait
+   <x>.y Trait defined behaviors and assertions
+
 _> Lambda Operator
 :> Currying Operator
 
@@ -41,15 +47,8 @@ _> Lambda Operator
   !{} Assertion Scope
   _{} Assembly Scope
   &{} Concurrent Scope
+  #{} Byte Structure Scope
 
-  ? Ternary operator ;true if true
-    x? x : y ; returns x if x is true 
-  : Return operator
-  ?? Null ternary, true if null 
-    x?? y : x
-  Ternary works on tuples
-    ?:(x, y, z)
-    ??:(x, y, z)
   = Assignment
     := Declare and assign
     @= Pointer assignment
@@ -66,16 +65,25 @@ Arithmetic on tuples/lists is performed element by element. Null elements are ig
 Bitwise on tuples allows mass masking
 
 Comparison Operators 
-    == value equality
-    === reference equality
-    != value inequality
-    !== reference inequality
-    > GREAT
-    >= GREQ
-    < LESS
-    <= LEEQ
-    <=> Returns {-1, 0, 1} if {LESS, EQ, GREAT}
-    ># Element of
+  == value equality
+  === reference equality
+  != value inequality
+  !== reference inequality
+  > GREAT
+  >= GREQ
+  < LESS
+  <= LEEQ
+  <=> Returns {-1, 0, 1} if {LESS, EQ, GREAT}
+  ># Element of
+
+  ? Ternary operator ; true if true
+    x? x : y ; returns x if x is true 
+  : Return operator
+  ?? Null ternary, true if null 
+    x?? y : x
+  Ternary works on tuples
+    ?:(x, y, z)
+    ??:(x, y, z)
 
 Arithmetic Operations
  + Addition 
@@ -109,3 +117,4 @@ Bytewise
     str &** 'regExpression with capture groups'
   &/* Find and Replace (replace capture groups with a token)
     str &** ('regExpression with capture groups', string or string expression)
+  &^ Endianness Operator
