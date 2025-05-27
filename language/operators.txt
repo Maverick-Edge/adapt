@@ -2,71 +2,101 @@
 ; Comment delineator
 
 , element separator
-[x:y:z] subscript operators and dimension separator
-:: iteration operator
+a,,b range / iteration operator
+   for i[,,] ; iterates each element in i
+   for i[3,,10] ; iterates elements indexed 3 to 10 in i
 
 #var Pointer operator, returns the address of the memory (Pointer)  
-@var Alias operater, returns the memory (Reference)
+@var Alias operater, returns implicitly dereferenced memory (Reference) or dereferences memory
 
 ~ Lifetime
 
-() call operator (may contain a tuple) 
-
-{} scoping operator
-  _{} Assembly Scope
-  \{} Threaded Scope
-     Cannot cross threads, only merge and split. when creating a threaded scope you can take possession of memory, and that memory cannot be accessed until the thread resolves.
   <tag} Scope Jump Operator  
   {tag> Scope Land Operator
  . member access operator
  .. scope access operator
    std..add() retrieves add() from std or it's public subscopes
    ..add() retrieves an external to the current scope add if there is a local add() defined.
-   also works for variables
 
- ? conditional
- : Declaration operator
- = Assignment
-   := Declare and assign
-   @= Pointer assignment
-   +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
+x.[y] subscript operator for accessing indexed fields
+   x[y] 
+   [x,y] tensor operator
+   [x]y
+x.(y) method access operator, supports multiple method calls
+   x(y) call operator 
+   (x, y) tuple/list/vector delineator
+   (x).y reverse call operator. supports vectorized calls on multiple values
+_> Lambda operator
 
- == value equality
- === reference equality
- [> bit shift right
- <] bit shift left
-!   NOT 
+{} Closure operator
+  !{} Assertion Scope
+  _{} Assembly Scope
+  &{} Concurrent Scope
 
-   ||   OR
-   &&   AND 
-   >>   IMP
-   !|   NOR
-   !&   NAND
-   !>   NIMP
-   ^|   XOR
-   ^!   XNOR
+  ? Ternary operator ;true if true
+    x? x : y ; returns x if x is true 
+  : Return operator
+  ?? Null ternary, true if null 
+    x?? y : x
+  Ternary works on tuples
+    ?:(x, y, z)
+    ??:(x, y, z)
+  = Assignment
+    := Declare and assign
+    @= Pointer assignment
+    +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 
+" String delineator
+ ' Regex Expressions
+ $ Regex Capture operator
+ ` Escape Character for strings, and spacer for hard coded bytes
+
+Comparison, Arithmetic, Bitwise, and Bytewise operators all have defined behavior on tuples and lists
+Comparisons on tuples return an array
+Arithmetic on tuples/lists is performed element by element. Null elements are ignored
+Bitwise on tuples allows mass masking
+
+Comparison Operators 
+    == value equality
+    === reference equality
+    != value inequality
+    !== reference inequality
+    > GREAT
+    >= GREQ
+    < LESS
+    <= LEEQ
+    <=> Returns {-1, 0, 1} if {LESS, EQ, GREAT}
+    ># Element of
+
+Arithmetic Operations
  + Addition 
  - Subtraction
  * Multiplication
  ** Exponent
  / Division
  // Modulo
-     Duplicate operations and assignment-operations can be strung together as a tuple: x += (1, 2, 3, 4) becomes 10. If given an array, it perform on each element.
-     Embedded tuples return tuples: x += ((1, 2, 3), (4, 5)) becomes (6, 9)
 
- " String delineator
- ' Regex Expressions
- ` Escape Character for strings, and spacer for hard coded bytes
+Bitwise Operators
+  [> bit shift right
+  <] bit shift left
+  ~   COMP  
+  ||   OR
+  &&   AND 
+  >>   IMP
+  !|   NOR
+  !&   NAND
+  !>   NIMP
+  ^|   XOR
+  ^!   XNOR
 
- &+ Concatenation (Specific Bytes)
- &* Concatenation (Insert copies after each instance of token)
-   "Hello " &* (" ", "World") becomes "Hello World"
-   "Hello  " &* (" ", " World") becomes "Hello  World  World"
- &** Regex Concatenation (Insert copies after specified capture groups)
-   str &** ('regExpression with capture groups', "inserted string")
- &- Decatenation (Specific Bytes)
- &/ Decatenation (Delete each instance of token)
- &// Decatenation (Delete capture groups)
-   str &** 'regExpression with capture groups'
- &/* Find and Replace (replace capture groups with a token)
+Bytewise
+  &+ Concatenation (Specific Bytes)
+  &** Concatenation (Insert copies after each instance of token or regex capture)
+    "Hello " &* (" ", "World") becomes "Hello World"
+    "Hello  " &* (" ", " World") becomes "Hello  World  World"
+    str &** ('regExpression with capture groups', "inserted string")
+  &- Decatenation (Specific Bytes)
+  &// Decatenation (Delete each instance of token or capture groups)
+    str &** 'regExpression with capture groups'
+  &/* Find and Replace (replace capture groups with a token)
+    str &** ('regExpression with capture groups', string or string expression)
