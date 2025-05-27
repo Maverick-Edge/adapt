@@ -1,6 +1,7 @@
 ;# Preprocessor and Compiler commands
 ; Comment delineator
 
+% alignment / size
 , element separator
 a,,b range / iteration operator
    for i[,,] ; iterates each element in i
@@ -22,11 +23,19 @@ x.[y] subscript operator for accessing indexed fields
    x[y] 
    [x,y] tensor operator
    [x]y
+   [x].y
 x.(y) method access operator, supports multiple method calls
    x(y) call operator 
    (x, y) tuple/list/vector delineator
+   (x)y
    (x).y reverse call operator. supports vectorized calls on multiple values
-_> Lambda operator
+x.<y>
+   x<y>
+   <x, y>
+   <x>y Trait punning
+   <x>.y
+_> Lambda Operator
+:> Currying Operator
 
 {} Closure operator
   !{} Assertion Scope
@@ -46,9 +55,9 @@ _> Lambda operator
     @= Pointer assignment
     +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 
-" String delineator
- ' Regex Expressions
- $ Regex Capture operator
+" String Literal
+ ' Regex Literal
+ $ Regex Capture operator, String Interpolation Operator
  ` Escape Character for strings, and spacer for hard coded bytes
 
 Comparison, Arithmetic, Bitwise, and Bytewise operators all have defined behavior on tuples and lists
