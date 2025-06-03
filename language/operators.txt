@@ -5,8 +5,8 @@
 % alignment / size
 , element separator
 a,,b range / iteration operator
-   for i[,,] ; iterates each element in i
-   for i[3,,10] ; iterates elements indexed 3 to 10 in i
+   for i(,,) ; iterates each element in i
+   for i(3,,10) ; iterates elements indexed 3 to 10 in i
 
 x :: y  Explicitly assign memory address y to x
 #var Pointer operator, returns the address of the memory (Pointer)  
@@ -23,12 +23,12 @@ x :: y  Explicitly assign memory address y to x
 
 
 x.(y) method access operator, supports multiple method calls
-   x(y) call operator 
+   x(y) call operator for methods. also serves as the subscript operator for indexing, as variable memory and method memory are equivalent.
    (x, y) tuple/list/vector
    (x)y
-   (x).y reverse call operator. supports vectorized calls on multiple values
-x.[y] subscript operator for accessing indexed fields
-   x[y][z] ; gets the z bit from the y byte of x 
+   (x).y SIMD call operations are built into tuples. supports vectorized calls on multiple values, as well as just 
+x.[y] 
+   x[y][z]
    [x, y] tensor operator
    [x]y
    [x].y
