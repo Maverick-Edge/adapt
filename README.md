@@ -1,5 +1,5 @@
 # Constant
-CA9, a custom programming language based on overwhelming developers.
+LYKOS, a custom programming language based on overwhelming developers.
 ## Ideals
 * ### Structure
   * Low Level to High Level:
