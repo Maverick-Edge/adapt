@@ -49,8 +49,8 @@ _> Lambda Operator
   &{} Concurrent Scope
   #{} Byte Structure Scope
 
-  = Assignment
-    := Declare and assign
+  
+    := Assign
     @= Pointer assignment
     +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 
@@ -118,3 +118,10 @@ Bytewise
   &/* Find and Replace (replace capture groups with a token)
     str &** ('regExpression with capture groups', string or string expression)
   &^ Endianness Operator
+
+
+Possible Ops
+
+<| |>
+[| |]
+{| |}
