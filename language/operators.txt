@@ -117,7 +117,11 @@ Bytewise
     str &** 'regExpression with capture groups'
   &/* Find and Replace (replace capture groups with a token)
     str &** ('regExpression with capture groups', string or string expression)
-  &^ Endianness Operator
+  &| BYTE OR
+    Uses the first string, but replaces any null bytes like EOF with values in the second string at the same index.
+  &&& BYTE AND: returns an ordered string of characters that match in the first and second string
+  &!| BYTE NOR: returns an ordered string characters from the first string that did not match the second strings
+
 
 
 Possible Ops
