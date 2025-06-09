@@ -26,7 +26,7 @@ x.(y) method access operator, supports multiple method calls
    x(y) call operator for methods. also serves as the subscript operator for indexing, as variable memory and method memory are equivalent.
    (x, y) tuple/list/vector
    (x)y
-   (x).y SIMD call operations are built into tuples. supports vectorized calls on multiple values, as well as just 
+   (x).y SIMD call operations are built into tuples.
 x.[y] 
    x[y][z]
    [x, y] tensor operator
