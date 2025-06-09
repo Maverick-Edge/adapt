@@ -57,7 +57,7 @@ _> Lambda Operator
 " String Literal
  ' Regex Literal
  $ Regex Capture operator, String Interpolation/Escape Operator
- ` LaTeX literal, and spacer for hard coded bytes
+ ` LaTeX or matex literal, and spacer for hard coded bytes
 
 Comparison, Arithmetic, Bitwise, and Bytewise operators all have defined behavior on tuples and lists
 Comparisons on tuples return an array
