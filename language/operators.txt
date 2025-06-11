@@ -65,18 +65,18 @@ Arithmetic on tuples/lists is performed element by element. Null elements are ig
 Bitwise on tuples allows mass masking
 
 Comparison Operators 
-  == value equality
-  === reference equality
-  != value inequality
-  !== reference inequality
-  > GREAT
-  >= GREQ
-  < LESS
-  <= LEEQ
-  <=> Returns {-1, 0, 1} if {LESS, EQ, GREAT}
+  =? value equality
+  ==? reference equality
+  !=? value inequality
+  !==? reference inequality
+  >? GREAT
+  >=? GREQ
+  <? LESS
+  <=? LEEQ
+  <=>? Returns {-1, 0, 1} if {LESS, EQ, GREAT}
   ># Element of
 
-  ? Ternary operator ; true if true
+  ? Comparison operator ; true if true
     x? x : y ; returns x if x is true 
   : Return operator
   ?? Null ternary, true if null 
