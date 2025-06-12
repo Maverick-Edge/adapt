@@ -10,7 +10,7 @@ a,,b range / iteration operator
 
 x :: y  Explicitly assign memory address y to x
 #var Pointer operator, returns the address of the memory (Pointer)  
-@var Alias operater, returns implicitly dereferenced memory (Reference) or dereferences memory
+@var Alias operater, returns implicitly dereferenced memory (Reference) or dereferences a pointer memory
 
 ~ Lifetime
 
