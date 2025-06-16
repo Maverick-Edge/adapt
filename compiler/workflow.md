@@ -3,7 +3,7 @@
 3) Preprocessing
 4) Tokenizer
 5) Keyword and Syntax Parsing
-6) Monadizing
+6) Error Monadizing
 7) Static Compiling
     1) Type Checking
     2) Inferred Type Checking
