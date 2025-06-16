@@ -63,14 +63,11 @@ _> Lambda Operator
     @= Pointer assignment
     +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 
-" String Literal
- ' Regex Literal
- $ Regex Capture operator, String Interpolation/Escape Operator
- ` LaTeX or matex literal, and spacer for hard coded bytes
 
-Comparison, Arithmetic, Bitwise, and Bytewise operators all have defined behavior on tuples and lists
+Comparison, Arithmetic, Bitwise, and Bytewise operators all have elementwise defined behavior on tuples
+
 Comparisons on tuples return an array
-Arithmetic on tuples/lists is performed element by element. Null elements are ignored
+Arithmetic on tuples/lists is performed element by element. Null elements are ignored.
 Bitwise on tuples allows mass masking
 
 Comparison Operators 
