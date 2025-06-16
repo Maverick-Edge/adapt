@@ -84,7 +84,7 @@ Comparison Operators
   <? LESS
   <=? LEEQ
   <=>? Returns {-1, 0, 1} if {LESS, EQ, GREAT}
-  ># Element of
+  >#? Element of (for uncalculated sets)
 
   ? Comparison operator ; true if true
     x? x : y ; returns x if x is true 
