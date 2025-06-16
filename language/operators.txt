@@ -19,9 +19,7 @@ a,,b range / iteration operator
 @var Alias operater, returns implicitly dereferenced memory (Reference) or dereferences a pointer memory
    @0b100110111 Dereferencing a numerical literal refers to that location in memory
    @#x dereferences a pointer to x
-   
-   int x
-   int y
+   x : int = y
    y := #x
    ; @y == x
    ; if y is a pointer to x then dereferencing y returns x
@@ -44,7 +42,7 @@ x.(y) method access operator, supports multiple method calls
    (x).y SIMD call operations are built into tuples.
 x.[y] 
    x[y][z]
-   [x, y] tensor operator
+   [x, y]
    [x]y
    [x].y
 x.<y>
