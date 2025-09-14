@@ -1,0 +1,10 @@
+void sample(var arg, var arg)
+  var num
+  while(arg =? false)
+    if (arg)
+      num++
+    else if(arg =? 0)
+      return
+    end if
+  end while
+end sample
