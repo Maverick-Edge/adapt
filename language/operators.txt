@@ -1,4 +1,4 @@
-"" String Literals
+f"" String Literals
 '' RegEx Literals
 `` MatEx Literals
 {~ ~} Escape and Interpolation Operator
@@ -8,15 +8,15 @@
 ;# Preprocessor and Compiler commands
 ; Comment delineator
 
-% alignment / size
+% alignment/size
 , element separator
-a,,b range / iteration operator
+a,,b range/iteration operator
    for i(,,) ; iterates each element in i
    for i(3,,10) ; iterates elements indexed 3 to 10 in i
 
 #var Pointer operator, returns the address of the memory (Pointer)
    #x returns a numerical literal reference pointing to the heading byte of that variable
-@var Alias operater, returns implicitly dereferenced memory (Reference) or dereferences a pointer memory
+@var Alias operator, returns implicitly dereferenced memory (Reference) or dereferences a pointer to memory
    @0b100110111 Dereferencing a numerical literal refers to that location in memory
    @#x dereferences a pointer to x
    x : int = y
@@ -32,7 +32,7 @@ a,,b range / iteration operator
  . member access operator
  .. scope access operator
    std..add() retrieves add() from std or it's public subscopes
-   ..add() retrieves an external to the current scope add if there is a local add() defined.
+   ..add() retrieves an external to the current scope, adds if there is a local add() defined.
 
 
 x.(y) method access operator, supports multiple method calls
@@ -68,7 +68,7 @@ _> Lambda Operator
     +=, -=, *=, /=, //= for their respective assignments, ++ and -- for +=1 and -=1
 
 
-Comparison, Arithmetic, Bitwise, and Bytewise operators all have elementwise defined behavior on tuples
+Comparison, Arithmetic, Bitwise, and Bytewise operators all have elementwise-defined behavior on tuples
 
 Comparisons on tuples return an array
 Arithmetic on tuples/lists is performed element by element. Null elements are ignored.
@@ -86,7 +86,7 @@ Comparison Operators
   <=>? Returns {-1, 0, 1} if {LESS, EQ, GREAT}
   >#? Element of (for uncalculated sets)
 
-  ? Comparison operator ; true if true
+  ? Comparison operator; true if true
     x? x : y ; returns x if x is true 
   : Return operator
   ?? Null ternary, true if null 
@@ -130,7 +130,7 @@ Bytewise
   &| BYTE OR
     Uses the first string, but replaces any null bytes like EOF with values in the second string at the same index.
   &&& BYTE AND: returns an ordered string of characters that match in the first and second string
-  &!| BYTE NOR: returns an ordered string characters from the first string that did not match the second strings
+  &!| BYTE NOR: returns an ordered string of characters from the first string that did not match the second string
 
 
 
